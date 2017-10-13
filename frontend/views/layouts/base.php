@@ -14,7 +14,7 @@ $this->beginContent('@frontend/views/layouts/_clear.php')
         'brandLabel' => Yii::$app->name,
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
+            'class' => 'navbar-inverse',
         ],
     ]); ?>
     <?php echo Nav::widget([
@@ -46,16 +46,17 @@ $this->beginContent('@frontend/views/layouts/_clear.php')
                     ]
                 ]
             ],
-            [
-                'label'=>Yii::t('frontend', 'Language'),
-                'items'=>array_map(function ($code) {
-                    return [
-                        'label' => Yii::$app->params['availableLocales'][$code],
-                        'url' => ['/site/set-locale', 'locale'=>$code],
-                        'active' => Yii::$app->language === $code
-                    ];
-                }, array_keys(Yii::$app->params['availableLocales']))
-            ]
+// скрить меню выбора языка
+//            [
+//                'label'=>Yii::t('frontend', 'Language'),
+//                'items'=>array_map(function ($code) {
+//                    return [
+//                        'label' => Yii::$app->params['availableLocales'][$code],
+//                        'url' => ['/site/set-locale', 'locale'=>$code],
+//                        'active' => Yii::$app->language === $code
+//                    ];
+//                }, array_keys(Yii::$app->params['availableLocales']))
+//            ]
         ]
     ]); ?>
     <?php NavBar::end(); ?>

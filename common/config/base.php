@@ -1,6 +1,6 @@
 <?php
 $config = [
-    'name'=>'EduService',
+    'name'=>'ПросторыВзлома',
     'vendorPath'=>dirname(dirname(__DIR__)).'/vendor',
     'extensions' => require(__DIR__ . '/../../vendor/yiisoft/extensions.php'),
     'sourceLanguage'=>'en-US',
