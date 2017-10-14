@@ -150,7 +150,7 @@ SQL-ИНЪЕКЦИЯ  </span>
                                 </div>
                             </a>
                         </div>
-                        <div class="row"><a href="" class="more">Список всех занятий →</a></div>
+                        <div class="row"><a href="/article" class="more">Список всех занятий →</a></div>
 
 
                     </div>

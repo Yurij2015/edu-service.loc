@@ -24,7 +24,7 @@ return [
     'Your activation link: {url}' => '',
     'About' => 'О нас',
     'Account Settings' => 'Настройки аккаунта',
-    'Articles' => 'Статьи',
+    'Articles' => 'Материалы',
     'Attachments' => 'Приложения',
     'Backend' => 'Панель управления',
     'Body' => 'Сообщение',
