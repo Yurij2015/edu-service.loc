@@ -13,9 +13,9 @@ use yii\helpers\Html;
             <?php echo Html::a($model->title, ['view', 'slug'=>$model->slug]) ?>
         </h2>
         <div class="article-meta">
-            <span class="article-date">
-                <?php echo Yii::$app->formatter->asDatetime($model->created_at) ?>
-            </span>,
+<!--            <span class="article-date">-->
+<!--                --><?php //echo Yii::$app->formatter->asDatetime($model->created_at) ?>
+<!--            </span>,-->
             <span class="article-category">
                 <?php echo Html::a(
                     $model->category->title,
@@ -35,8 +35,11 @@ use yii\helpers\Html;
                 ) ?>
             <?php endif; ?>
             <div class="article-text">
-                <?php echo \yii\helpers\StringHelper::truncate($model->body, 150, '...', null, true) ?>
+                <?php echo \yii\helpers\StringHelper::truncate($model->body, 200, '', null, true) ?>
             </div>
+            <p class="readmore">
+		        <?php echo Html::a('Читать материал...', ['view', 'slug'=>$model->slug]) ?>
+            </p>
         </div>
     </div>
 </div>

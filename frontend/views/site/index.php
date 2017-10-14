@@ -16,12 +16,12 @@ $this->title = Yii::$app->name;
 
         <p class="lead">Учась взламывать, учитесь защищать себя</p>
 
-		<?php echo common\widgets\DbMenu::widget( [
-			'key'     => 'frontend-index',
-			'options' => [
-				'tag' => 'p'
-			]
-		] ) ?>
+<!--		--><?php //echo common\widgets\DbMenu::widget( [
+//			'key'     => 'frontend-index',
+//			'options' => [
+//				'tag' => 'p'
+//			]
+//		] ) ?>
 
     </div>
 

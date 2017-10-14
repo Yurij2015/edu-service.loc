@@ -7,7 +7,7 @@ use yii\captcha\Captcha;
 /* @var $form yii\widgets\ActiveForm */
 /* @var $model \frontend\models\ContactForm */
 
-$this->title = 'Contact';
+$this->title = 'Форма обратной связи';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-contact">
@@ -21,7 +21,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <?php echo $form->field($model, 'subject') ?>
                 <?php echo $form->field($model, 'body')->textArea(['rows' => 6]) ?>
                 <?php echo $form->field($model, 'verifyCode')->widget(Captcha::className(), [
-                    'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-6">{input}</div></div>',
+                    'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-9">{input}</div></div>',
                 ]) ?>
                 <div class="form-group">
                     <?php echo Html::submitButton(Yii::t('frontend', 'Submit'), ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
